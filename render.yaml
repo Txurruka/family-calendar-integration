@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: family-calendar-api
+    runtime: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: NOTION_TOKEN
+        sync: false
+      - key: NOTION_DATABASE_ID
+        sync: false
